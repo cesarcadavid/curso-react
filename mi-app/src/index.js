@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -10,6 +10,25 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+// const Li = ({children, estado, casa, edad}) => {
+//   console.log(casa, edad)
+//   return (<li>{children} estoy {estado}</li>)
+// }
+            
+
+// const X = () => 
+//             <ul>
+//               <Li  estado = {'feliz'} casa = {false} edad = {24}>
+//                 Chanchito
+//               </Li>
+//               <Li estado = {'Triste'}>Chanchito</Li>
+//               <Li estado = {'Emocionado'}>Felipe</Li>
+//             </ul>
+
+// ReactDOM.render(
+//   <X />, document.getElementById('root')
+// )
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
